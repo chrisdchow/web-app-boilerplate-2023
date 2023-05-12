@@ -1,5 +1,7 @@
 {
   "editor.formatOnSave": true,
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": "./client/.yarn/sdks",
   "isort.args": [
     "--profile", "black"
   ],
@@ -9,7 +11,13 @@
     },
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "prettier.prettierPath": "./client/.yarn/sdks/prettier",
   "python.defaultInterpreterPath": "/Users/chris/workspace/venv311/bin/python",
   "python.formatting.provider": "black",
-  "typescript.tsdk": "/Users/chris/workspace/accountability/client/.yarn/sdks/typescript/lib"
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "./client/.yarn/sdks/typescript/lib"
 }
